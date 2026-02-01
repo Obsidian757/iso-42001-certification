@@ -44,12 +44,15 @@ Date: _______________
 ---
 
 **Document Location:** 
-Full policy available at: `docs/12th-house-ai-policy.md`
+Full policy available at: `~/Desktop/iso-42001-certification/docs/12th-house-ai-policy.md`
 
-**Related Documents:**
-- AI Governance Statement (client-facing)
-- AIMS Operations Manual (internal procedures)
-- AI Risk Register (`evidence/ai-risk-register.xlsx`)
-- Metrics Tracking (`evidence/metrics-tracking.xlsx`)
-- Incident Monitoring Plan
+**Related Documents (Desktop Folder):**
+| Document | Location |
+|----------|----------|
+| AIMS Policy (Full) | `~/Desktop/iso-42001-certification/docs/12th-house-ai-policy.md` |
+| AI Governance Statement | `~/Desktop/iso-42001-certification/docs/ai-governance-statement.md` |
+| AIMS Operations Manual | `~/Desktop/iso-42001-certification/docs/AIMS-operations-manual.md` |
+| Incident Monitoring Plan | `~/Desktop/iso-42001-certification/docs/incident-monitoring-plan.md` |
+| AI Risk Register | `~/Desktop/iso-42001-certification/evidence/ai-risk-register.xlsx` |
+| Metrics Tracking | `~/Desktop/iso-42001-certification/evidence/metrics-tracking.xlsx` |
 
