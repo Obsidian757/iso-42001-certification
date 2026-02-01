@@ -115,7 +115,7 @@ This policy aligns with:
 
 ### 5.1 Client Success
 - **90-Day Implementation Cycles:** Deliver production-ready AI solutions in 90 days or less
-- **5% Framework Adherence:** Help clients achieve successful AI adoption (avoiding the 95% failure rate)
+- **Framework Adherence:** Help clients achieve successful AI adoption through structured governance (avoiding common implementation failures)
 - **Zero Compliance Violations:** Maintain perfect record of regulatory compliance in client engagements
 
 ### 5.2 Operational Excellence
@@ -161,14 +161,14 @@ All AI systems undergo risk assessment before deployment:
 **No Critical-risk AI systems may be deployed without written CEO approval and documented mitigation.**
 
 ### 6.3 AI Risk Register
-All identified AI risks are logged in the AI Risk Register, including:
+All identified AI risks are logged in the AI Risk Register (see `evidence/ai-risk-register.xlsx`), including:
 - Risk description and category
 - Affected AI system(s)
 - Likelihood and impact ratings
 - Treatment plan and owner
 - Current status and review date
 
-The Risk Register is reviewed quarterly and updated as needed.
+**Review:** Quarterly as part of the AIMS Governance Review (first week of January, April, July, October)
 
 ---
 
@@ -289,7 +289,16 @@ The Risk Register is reviewed quarterly and updated as needed.
 - Unauthorized manipulation or adversarial attack
 - Regulatory non-compliance or audit finding
 
-### 11.2 Incident Response Process
+### 11.2 Incident Detection & Response
+
+**Detection:** Incidents are detected via monitoring systems defined in the Incident Monitoring Plan (`docs/incident-monitoring-plan.md`):
+- Automated alerts from Vapi, ElevenLabs, AWS CloudWatch
+- Weekly accuracy spot-checks (RMF Navigator)
+- Quarterly bias testing (VoiceGuard)
+- Monthly false negative reviews (VISTA)
+- Direct client reports
+
+**Response Process:**
 1. **Detect & Report:** Identify incident via monitoring or user report
 2. **Contain:** Isolate affected AI system to prevent further impact
 3. **Investigate:** Determine root cause and scope of impact
@@ -308,33 +317,50 @@ The Risk Register is reviewed quarterly and updated as needed.
 ## 12. Performance Evaluation
 
 ### 12.1 Metrics & Monitoring
-12th House AI tracks the following AI governance metrics:
+12th House AI tracks AI governance metrics via the Metrics Tracking System (`evidence/metrics-tracking.xlsx`):
 
 **Compliance Metrics:**
-- Number of AI systems compliant with ISO 42001 / NIST AI RMF / OMB memos
-- Audit findings (zero target for Critical/High findings)
-- Regulatory inquiries or violations (zero target)
+| Metric | Target | Measurement Method |
+|--------|--------|-------------------|
+| AI Systems Compliant | 100% | Quarterly checklist validation against ISO 42001 |
+| Audit Findings (Critical/High) | 0 | Count from internal audit reports |
+| Regulatory Violations | 0 | Ongoing compliance monitoring |
 
 **Operational Metrics:**
-- AI system uptime and reliability (99.5% target)
-- Incident count and severity (trend reduction)
-- Time to detect and resolve AI issues
+| Metric | Target | Measurement Method |
+|--------|--------|-------------------|
+| AI System Uptime | 99.5% | Vendor SLA dashboards (Vapi, ElevenLabs, AWS) |
+| Mean Time to Detection | <15 min | Incident log timestamps |
+| Mean Time to Resolution | <4h (Critical), <24h (High) | Incident log timestamps |
 
 **Quality Metrics:**
-- Client satisfaction with AI solutions (NPS score)
-- AI project success rate (target: 95%+ successful deployments)
-- Bias/fairness test results (documented baselines)
+| Metric | Target | Measurement Method |
+|--------|--------|-------------------|
+| Client Satisfaction (NPS) | >50 | Post-engagement survey (SurveyMonkey) |
+| AI Project Success Rate | >95% | Projects meeting objectives / Total projects |
+| Bias Test Pass Rate | 100% | Quarterly fairness tests on synthetic data |
 
-### 12.2 Internal Audit
-- Quarterly internal audits of AIMS compliance
-- Self-assessment against ISO 42001 clauses and Annex A controls
-- Document findings, corrective actions, and follow-up
+### 12.2 AIMS Governance Review (Consolidated Quarterly Cycle)
 
-### 12.3 Management Review
-- Quarterly management review of AIMS effectiveness
-- Review of AI objectives, risks, incidents, metrics, and audit results
-- Decisions on AIMS updates, resource allocation, and policy changes
-- Documented minutes and action items
+To optimize the solo-founder operation, all AIMS governance activities are consolidated into a single **Quarterly AIMS Governance Review** conducted during the first week of January, April, July, and October.
+
+**Review Schedule:**
+| Month | Activities |
+|-------|-----------|
+| January | Risk register review, internal audit, metrics review, management review, policy updates |
+| April | Risk register review, internal audit, metrics review, management review |
+| July | Risk register review, internal audit, metrics review, management review, mid-year policy review |
+| October | Risk register review, internal audit, metrics review, management review, annual planning |
+
+**Each Quarterly Review Includes:**
+1. **Risk Register Review** - Update `evidence/ai-risk-register.xlsx`
+2. **Internal Audit** - Self-assessment against ISO 42001 clauses and Annex A controls
+3. **Metrics Review** - Update `evidence/metrics-tracking.xlsx`
+4. **Incident Review** - Review all incidents since last quarter
+5. **Management Review** - Document decisions, resource needs, policy changes
+6. **Action Items** - Assign owners and deadlines for improvements
+
+**Documentation:** Review minutes saved to `evidence/governance-reviews/YYYY-QX-review.md`
 
 ---
 

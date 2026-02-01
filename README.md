@@ -21,7 +21,7 @@ This package contains all documentation, templates, and marketing materials for:
 
 ```
 iso-42001-certification/
-├── docs/                    # Core documentation (12 files)
+├── docs/                    # Core documentation (15 files)
 ├── templates/               # Reusable templates (5 files)
 ├── marketing/               # Client-facing materials (6 files)
 ├── client-management/       # Multi-client tracking system
@@ -38,14 +38,17 @@ iso-42001-certification/
 
 ## Documentation Inventory
 
-### `/docs/` - Core Documentation (12 files, ~180KB)
+### `/docs/` - Core Documentation (15 files, ~220KB)
 
 | File | Purpose | Status |
 |------|---------|--------|
 | `iso-42001-explained-simple.md` | Plain English ISO 42001 explanation | ✅ Complete |
-| `12th-house-ai-policy.md` | AIMS Policy (requires signature) | ✅ Ready to sign |
+| `12th-house-ai-policy.md` | AIMS Policy (auditor-facing, requires signature) | ✅ Ready to sign |
+| `ai-governance-statement.md` | Client-facing AI Governance Statement | ✅ Complete |
+| `AIMS-operations-manual.md` | Internal AIMS Operations Manual | ✅ Complete |
+| `incident-monitoring-plan.md` | Detection systems and triggers | ✅ Complete |
 | `gap-analysis.md` | Current state vs. ISO 42001 requirements | ✅ Complete |
-| `risk-register.md` | 10 identified AI risks | ✅ Complete |
+| `risk-register.md` | Risk register guidance | ✅ Complete |
 | `ai-lifecycle-process.md` | AI system lifecycle management | ✅ Complete |
 | `data-governance-procedure.md` | Data handling for AI systems | ✅ Complete |
 | `vendor-management-procedure.md` | Third-party AI vendor oversight | ✅ Complete |
