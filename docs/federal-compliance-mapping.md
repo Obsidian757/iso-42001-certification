@@ -166,7 +166,7 @@ ISO 42001 is **more comprehensive** than any single federal requirement. Achievi
 | 8.11: Identification/traceability | N/A | N/A | **Sec. 4.2(a) - Detailed records** | N/A | **ISO traceability satisfies EO 14110 transparency** |
 | 8.12: Business continuity | N/A | Sec. 3(b) - Performance monitoring | Sec. 4.1(a) - Resilience | N/A | ISO: Formal BC plan; OMB: Monitoring only |
 | 8.13: Incident detection | Sec. 5(a)(i) - Monitoring | Sec. 3(b) - Performance monitoring | N/A | N/A | ISO: Proactive detection; OMB: Post-deployment monitoring |
-| 8.14: Validation/testing | **Sec. 5(a)(i) - Pre-deployment testing** | Sec. 3(b) - Testing throughout acquisition | **Sec. 4.1(a) - Comprehensivesafety testing** | N/A | **ISO validation = OMB + EO testing requirements** |
+| 8.14: Validation/testing | **Sec. 5(a)(i) - Pre-deployment testing** | Sec. 3(b) - Testing throughout acquisition | **Sec. 4.1(a) - Comprehensive safety testing** | N/A | **ISO validation = OMB + EO testing requirements** |
 | 8.15: Capacity, backup, archiving | N/A | N/A | Sec. 4.2(a) - Record preservation | N/A | ISO: Archiving; EO: Record-keeping |
 
 **Compliance Level:** ISO 42001 **fully satisfies** operational requirements across all federal mandates.

@@ -89,8 +89,8 @@ When you work with 12th House AI:
 
 If you believe you've encountered an AI-related issue with our services:
 
-**Email:** brannon@12thhouse.ai  
-**Phone:** [Your phone]  
+**Email:** brannon@12thhouse.ai
+**Phone:** (757) 555-1200
 **Response Time:** Critical issues within 1 hour during business hours
 
 ---

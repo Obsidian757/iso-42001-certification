@@ -107,6 +107,19 @@ This policy aligns with:
 
 **Note:** As a solo-founder operation, Brannon Solomon currently fulfills all roles. As 12th House AI scales, these responsibilities will be delegated while maintaining clear accountability.
 
+### 4.5 Conflict of Interest Management
+
+With a single individual holding all governance roles, 12th House AI implements the following controls to prevent self-audit bias and ensure objective oversight:
+
+- **External Annual Audit:** Engage an independent third party (e.g., ISO certification body, external consultant) to conduct annual AIMS audits
+- **Client Feedback Loop:** Collect and review client feedback on AI governance practices as an independent validation mechanism
+- **Documented Decision Rationale:** All risk acceptance decisions, policy exceptions, and incident resolutions require written justification that can be reviewed by external parties
+- **Peer Review Network:** Participate in industry peer reviews through NavalX, 757 Collab, or similar professional networks to obtain external perspective on governance practices
+- **Separation of Review Timing:** When conducting self-assessments, allow a minimum 48-hour gap between performing work and reviewing/auditing that same work
+- **Escalation to Advisors:** For Critical-risk decisions, consult with external legal counsel or industry advisors before approval
+
+**Trigger for Role Separation:** Upon hiring the first full-time employee or reaching $500K annual revenue, 12th House AI will begin formally separating the AI Risk Owner and Compliance Officer roles from the CEO function.
+
 ---
 
 ## 5. AI Objectives

@@ -1,9 +1,9 @@
 # Incident Monitoring Plan
 
-**Document ID:** IMP-001  
-**Version:** 1.0  
-**Effective Date:** January 2026  
-**Owner:** AI Safety Officer  
+**Document ID:** IMP-001
+**Version:** 1.0
+**Effective Date:** February 1, 2026
+**Owner:** Brannon Solomon (AI Risk Owner)
 **Review Cycle:** Quarterly  
 
 ---
@@ -113,16 +113,16 @@ This plan covers all AI systems in scope of the AIMS:
 | Incident Level | Definition | First Response | Escalation Timeline |
 |----------------|------------|----------------|---------------------|
 | **Critical** | Data breach, System-wide outage, Active adversarial attack, Severe bias affecting users | AI Engineer (on-call) | If unresolved in 30 min → CTO → If unresolved in 2 hrs → CEO |
-| **High** | Significant accuracy degradation, Hallucination reports, Security anomalies | AI Safety Officer | If unresolved in 4 hrs → CTO |
-| **Medium** | Model drift detected, Minor performance issues, Non-compliance concerns | AI Engineer | If unresolved in 24 hrs → AI Safety Officer |
-| **Low** | Documentation gaps, Review findings requiring follow-up | AI Safety Officer | Weekly review meeting |
+| **High** | Significant accuracy degradation, Hallucination reports, Security anomalies | AI Risk Owner | If unresolved in 4 hrs → CTO |
+| **Medium** | Model drift detected, Minor performance issues, Non-compliance concerns | AI Engineer | If unresolved in 24 hrs → AI Risk Owner |
+| **Low** | Documentation gaps, Review findings requiring follow-up | AI Risk Owner | Weekly review meeting |
 
 ### 4.3 Contact Information
 
 | Role | Primary Contact | Escalation Contact |
 |------|-----------------|-------------------|
 | AI Engineer (On-call) | oncall@12thhouse.ai | - |
-| AI Safety Officer | safety@12thhouse.ai | CTO |
+| AI Risk Owner | safety@12thhouse.ai | CTO |
 | CTO | cto@12thhouse.ai | CEO |
 | CEO | ceo@12thhouse.ai | - |
 
@@ -134,7 +134,7 @@ This plan covers all AI systems in scope of the AIMS:
 
 1. **Immediate (0-15 min):** 
    - Acknowledge alert and assess scope via CloudTrail logs
-   - Notify AI Safety Officer via SMS
+   - Notify AI Risk Owner via SMS
    - Isolate affected systems if ongoing
 
 2. **Short-term (15 min - 2 hrs):**
@@ -157,7 +157,7 @@ This plan covers all AI systems in scope of the AIMS:
 2. **Short-term (4-24 hrs):**
    - If confirmed, assess impact on affected users
    - Implement temporary mitigation (e.g., human review layer)
-   - Notify AI Safety Officer
+   - Notify AI Risk Owner
 
 3. **Long-term:**
    - Retrain or fine-tune model with bias mitigation
@@ -235,8 +235,8 @@ This plan covers all AI systems in scope of the AIMS:
 | Review Type | Frequency | Owner | Purpose |
 |-------------|-----------|-------|---------|
 | **Metrics Review** | Weekly | AI Engineer | Review monitoring dashboards, tune thresholds |
-| **Incident Triage** | Weekly | AI Safety Officer | Review open incidents, validate detection efficacy |
-| **Plan Review** | Quarterly | AI Safety Officer | Update monitoring coverage, tools, thresholds based on lessons learned |
+| **Incident Triage** | Weekly | AI Risk Owner | Review open incidents, validate detection efficacy |
+| **Plan Review** | Quarterly | AI Risk Owner | Update monitoring coverage, tools, thresholds based on lessons learned |
 | **Audit Alignment** | Annually | CTO | Ensure monitoring meets ISO 42001 and client audit requirements |
 
 ### 6.2 Maintenance Triggers
@@ -253,7 +253,7 @@ This plan must be updated when:
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 1.0 | January 2026 | AI Safety Officer | Initial release |
+| 1.0 | February 1, 2026 | Brannon Solomon | Initial release |
 
 ---
 
