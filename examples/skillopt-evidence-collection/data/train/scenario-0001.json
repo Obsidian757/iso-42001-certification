@@ -1,0 +1,85 @@
+{
+  "id": "scenario-0001",
+  "task_type": "technical_evidence",
+  "audit_period": {
+    "start": "2026-01-01",
+    "end": "2026-06-30"
+  },
+  "scope_clauses": [
+    "5.1",
+    "6.1",
+    "8.2",
+    "8.9",
+    "8.10",
+    "8.13"
+  ],
+  "corpus": {
+    "AIMS-POL-01": {
+      "title": "AI Policy",
+      "version": "3.0",
+      "approved": true,
+      "date": "2026-02-10"
+    },
+    "RISK-REG": {
+      "title": "AI Risk Register",
+      "version": "live",
+      "date": "2026-05-01"
+    },
+    "IA-8.2": {
+      "title": "AI Impact Assessment - ChatAssist",
+      "signed": true,
+      "date": "2026-03-04"
+    }
+  },
+  "red_swarm_reports": [
+    {
+      "file": "rs-2026-06.json",
+      "findings": [
+        {
+          "id": "finding-001",
+          "kind": "prompt_injection",
+          "severity": "high"
+        },
+        {
+          "id": "finding-002",
+          "kind": "pii_leakage",
+          "severity": "medium"
+        }
+      ]
+    }
+  ],
+  "gold": {
+    "scope_clauses": [
+      "5.1",
+      "6.1",
+      "8.2",
+      "8.9",
+      "8.10",
+      "8.13"
+    ],
+    "audit_period": {
+      "start": "2026-01-01",
+      "end": "2026-06-30"
+    },
+    "expected_gaps": [
+      "8.13"
+    ],
+    "expected_missing_records": [
+      "8.13:monitoring-coverage"
+    ],
+    "control_mappings": {
+      "finding-001": {
+        "annex_a": [
+          "A.6.2.4"
+        ],
+        "clause": "8.9"
+      },
+      "finding-002": {
+        "annex_a": [
+          "A.7.3"
+        ],
+        "clause": "8.10"
+      }
+    }
+  }
+}

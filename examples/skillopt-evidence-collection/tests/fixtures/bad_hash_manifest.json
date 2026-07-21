@@ -1,0 +1,248 @@
+{
+  "evidence_index": [
+    {
+      "id": "E-001",
+      "type": "document",
+      "source": "AIMS-POL-01",
+      "clause": "5.1",
+      "timestamp": "2026-02-10"
+    },
+    {
+      "id": "E-007",
+      "type": "interview",
+      "source": "Top management (role)",
+      "clause": "5.1",
+      "timestamp": "2026-06-01"
+    },
+    {
+      "id": "E-002",
+      "type": "record",
+      "source": "RISK-REG#row-14",
+      "clause": "6.1",
+      "timestamp": "2026-05-01",
+      "provenance": {
+        "population": "2026 risk entries",
+        "selection_method": "random n=5",
+        "item_id": "row-14"
+      }
+    },
+    {
+      "id": "E-008",
+      "type": "interview",
+      "source": "Risk owner (role)",
+      "clause": "6.1",
+      "timestamp": "2026-06-01"
+    },
+    {
+      "id": "E-003",
+      "type": "document",
+      "source": "IA-8.2",
+      "clause": "8.2",
+      "timestamp": "2026-03-04"
+    },
+    {
+      "id": "E-004",
+      "type": "interview",
+      "source": "AI Lead (role)",
+      "clause": "8.2",
+      "timestamp": "2026-06-02"
+    },
+    {
+      "id": "E-005",
+      "type": "technical",
+      "source": "rs-2026-06.json#finding-001",
+      "clause": "8.9",
+      "timestamp": "2026-06-15"
+    },
+    {
+      "id": "E-009",
+      "type": "document",
+      "source": "SEC-PROC-09",
+      "clause": "8.9",
+      "timestamp": "2026-04-20"
+    },
+    {
+      "id": "E-006",
+      "type": "technical",
+      "source": "rs-2026-06.json#finding-002",
+      "clause": "8.10",
+      "timestamp": "2026-06-15"
+    },
+    {
+      "id": "E-010",
+      "type": "document",
+      "source": "PRIV-DPIA-03",
+      "clause": "8.10",
+      "timestamp": "2026-03-30"
+    }
+  ],
+  "sufficiency": {
+    "5.1": "SUFFICIENT",
+    "6.1": "SUFFICIENT",
+    "8.2": "SUFFICIENT",
+    "8.9": "SUFFICIENT",
+    "8.10": "SUFFICIENT",
+    "8.13": "GAP"
+  },
+  "technical_evidence_map": {
+    "finding-001": {
+      "annex_a": [
+        "A.6.2.4"
+      ],
+      "clause": "8.9"
+    },
+    "finding-002": {
+      "annex_a": [
+        "A.7.3"
+      ],
+      "clause": "8.10"
+    }
+  },
+  "chain_of_custody": [
+    {
+      "evidence_id": "E-001",
+      "type": "document",
+      "source": "AIMS-POL-01",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-02-10T09:00:00Z",
+      "content_hash": "4facd52c6c515d5526caac4f938fe81d7e480fa0c77855b985db21489a973487",
+      "prior_entry_hash": "GENESIS",
+      "trusted_timestamp": "tst:4facd52c6c515d55",
+      "clauses": [
+        "5.1"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-007",
+      "type": "interview",
+      "source": "Top management (role)",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-06-01T09:00:00Z",
+      "content_hash": "9e3aedb2f3ac95c71c99ef6454eed7eaeaf446d18cea0ffa5edd3f84bb9b920e",
+      "prior_entry_hash": "4facd52c6c515d5526caac4f938fe81d7e480fa0c77855b985db21489a973487",
+      "trusted_timestamp": "tst:9e3aedb2f3ac95c7",
+      "clauses": [
+        "5.1"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-002",
+      "type": "record",
+      "source": "RISK-REG#row-14",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-05-01T09:00:00Z",
+      "content_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "prior_entry_hash": "9e3aedb2f3ac95c71c99ef6454eed7eaeaf446d18cea0ffa5edd3f84bb9b920e",
+      "trusted_timestamp": "tst:e71e67714e5ea78e",
+      "clauses": [
+        "6.1"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-008",
+      "type": "interview",
+      "source": "Risk owner (role)",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-06-01T09:00:00Z",
+      "content_hash": "1c87412027c7a35f46d9dfaaa49653cd822b0a8de87253b2ae3091ff20d74ad5",
+      "prior_entry_hash": "e71e67714e5ea78e324c51bee0f7bb40a0c57b7e7134d87b22920de3bbd9ae94",
+      "trusted_timestamp": "tst:1c87412027c7a35f",
+      "clauses": [
+        "6.1"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-003",
+      "type": "document",
+      "source": "IA-8.2",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-03-04T09:00:00Z",
+      "content_hash": "a3b5e0b1e2c35123451fab0b71e084f05ee4420cf3b41437da79560232f26425",
+      "prior_entry_hash": "1c87412027c7a35f46d9dfaaa49653cd822b0a8de87253b2ae3091ff20d74ad5",
+      "trusted_timestamp": "tst:a3b5e0b1e2c35123",
+      "clauses": [
+        "8.2"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-004",
+      "type": "interview",
+      "source": "AI Lead (role)",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-06-02T09:00:00Z",
+      "content_hash": "86a65187b0472d592f5e0575206f0dacbd3252a25e8dab3ff72bf87856e0168b",
+      "prior_entry_hash": "a3b5e0b1e2c35123451fab0b71e084f05ee4420cf3b41437da79560232f26425",
+      "trusted_timestamp": "tst:86a65187b0472d59",
+      "clauses": [
+        "8.2"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-005",
+      "type": "technical",
+      "source": "rs-2026-06.json#finding-001",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-06-15T09:00:00Z",
+      "content_hash": "6f1ad1034257e7f77041cc0f88321ed7cbdb3e83e3a229d1a4c92de35cd4f50f",
+      "prior_entry_hash": "86a65187b0472d592f5e0575206f0dacbd3252a25e8dab3ff72bf87856e0168b",
+      "trusted_timestamp": "tst:6f1ad1034257e7f7",
+      "clauses": [
+        "8.9"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-009",
+      "type": "document",
+      "source": "SEC-PROC-09",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-04-20T09:00:00Z",
+      "content_hash": "5ec9cb233f8e7608a79528da7c8640215862f2182a46aebc79654552d5fb1ba7",
+      "prior_entry_hash": "6f1ad1034257e7f77041cc0f88321ed7cbdb3e83e3a229d1a4c92de35cd4f50f",
+      "trusted_timestamp": "tst:5ec9cb233f8e7608",
+      "clauses": [
+        "8.9"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-006",
+      "type": "technical",
+      "source": "rs-2026-06.json#finding-002",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-06-15T09:00:00Z",
+      "content_hash": "50f61524b612a85fb4516b9743c7c9a69b945aa13512f612f1c146d0e199ecb1",
+      "prior_entry_hash": "5ec9cb233f8e7608a79528da7c8640215862f2182a46aebc79654552d5fb1ba7",
+      "trusted_timestamp": "tst:50f61524b612a85f",
+      "clauses": [
+        "8.10"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    },
+    {
+      "evidence_id": "E-010",
+      "type": "document",
+      "source": "PRIV-DPIA-03",
+      "collector": "agent-run-42",
+      "capture_timestamp": "2026-03-30T09:00:00Z",
+      "content_hash": "4be9ae96312ef2f98ad0a53e13b1aff486c32fd24fa39e75d85a706b684713a7",
+      "prior_entry_hash": "50f61524b612a85fb4516b9743c7c9a69b945aa13512f612f1c146d0e199ecb1",
+      "trusted_timestamp": "tst:4be9ae96312ef2f9",
+      "clauses": [
+        "8.10"
+      ],
+      "sufficiency": "EVIDENCE-SUFFICIENT"
+    }
+  ],
+  "sampling_deviations": [],
+  "grades_assigned": [],
+  "routed_for_sufficiency_review": true,
+  "self_declared_sufficient": false,
+  "narrative": "Collected documented, sampled, interview, and technical evidence; 8.13 monitoring coverage not evidenced - flagged as a gap for the human auditor."
+}

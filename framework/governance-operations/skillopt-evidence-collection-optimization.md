@@ -186,9 +186,19 @@ controls:
    shadow-run on live audits; then version and deploy through prompt change management.
 5. **Monitor** — track the success metrics on real fieldwork; re-open the loop if drift appears.
 
+## Reference implementation
+
+A runnable skeleton of this env — SkillOpt contract wiring plus the full
+gate + rubric **verifier** and offline tests validating it against hand-graded
+rollouts — lives at
+[`examples/skillopt-evidence-collection/`](../../examples/skillopt-evidence-collection/).
+It implements Phase 1 (build the harness) and the verifier-validation step; the
+dataset there is illustrative, not the 40–60 scenarios this brief calls for.
+
 ## References
 
 - SkillOpt — https://github.com/microsoft/SkillOpt
+- [Reference env skeleton](../../examples/skillopt-evidence-collection/) (this env, runnable)
 - `evidence-collection` skill (the optimization target)
 - [Prompt Engineering Standards](../llm-lifecycle/prompt-engineering-standards.md)
 - [Agentic AI Risk](../risk-classification/agentic-ai-risk.md)

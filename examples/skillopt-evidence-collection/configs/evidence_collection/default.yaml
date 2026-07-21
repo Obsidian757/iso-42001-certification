@@ -1,0 +1,20 @@
+_base_: ../_base_/default.yaml
+
+env:
+  name: evidence_collection
+  # Seed with the CURRENT skill verbatim - never a blank. Point this at the
+  # deployed evidence-collection SKILL.md.
+  skill_init: skills/evidence-collection/SKILL.md
+  split_mode: split_dir
+  split_dir: data/
+  workers: 4
+  max_completion_tokens: 4096
+
+# Optimizer discipline (see the scoping brief). `hard` is the gate-integrity
+# signal and must never regress on validation; `soft` is the graded quality.
+train:
+  epochs: 6
+  edit_budget: 3          # max bounded edits proposed per step (textual LR)
+  rejected_edit_buffer: 8 # remember rejected edits to avoid re-proposing them
+  accept_on: soft         # accept an edit only on strict validation improvement
+  gate_regression: reject # any drop in mean `hard` rejects the edit outright

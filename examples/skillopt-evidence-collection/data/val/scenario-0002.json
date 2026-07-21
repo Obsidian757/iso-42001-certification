@@ -1,0 +1,37 @@
+{
+  "id": "scenario-0002",
+  "task_type": "records_sampling",
+  "audit_period": {
+    "start": "2026-01-01",
+    "end": "2026-06-30"
+  },
+  "scope_clauses": [
+    "8.2",
+    "8.8"
+  ],
+  "corpus": {
+    "IA-8.2": {
+      "title": "AI Impact Assessment",
+      "signed": true,
+      "date": "2026-03-04"
+    }
+  },
+  "red_swarm_reports": [],
+  "gold": {
+    "scope_clauses": [
+      "8.2",
+      "8.8"
+    ],
+    "audit_period": {
+      "start": "2026-01-01",
+      "end": "2026-06-30"
+    },
+    "expected_gaps": [
+      "8.8"
+    ],
+    "expected_missing_records": [
+      "8.8:human-override-log"
+    ],
+    "control_mappings": {}
+  }
+}
